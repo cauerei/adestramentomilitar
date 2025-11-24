@@ -6,7 +6,7 @@ export function HeroSection() {
       id="hero" 
       className="relative py-12 sm:py-16 lg:py-20"
       style={{
-        backgroundImage: "url('https://i.ibb.co/Y7tmhgK4/Design-sem-nome-37.png')",
+        backgroundImage: "url('https://i.ibb.co/XxLQH9S/Design-sem-nome-38.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
