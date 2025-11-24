@@ -6,7 +6,6 @@ import { Heart, ThumbsUp, MessageSquare } from 'lucide-react';
 const testimonials = [
   {
     name: 'Lucas Mendonça',
-    location: 'São Paulo, SP',
     text: '“Eu já tinha tentado vários métodos e nada funcionava. No 3º dia aplicando o Método Militar meu cachorro parou de me arrastar no passeio. Surreal o resultado! Recomendo demais!”',
     imageUrl: 'https://i.ibb.co/Cp9Mcypw/images-7.webp',
     imageHint: 'man portrait',
@@ -16,7 +15,6 @@ const testimonials = [
   },
   {
     name: 'Rafael Antunes',
-    location: 'Belo Horizonte, MG',
     text: '“Meu cachorro era super ansioso e não obedecia nada. Em menos de 7 dias ele virou outro! O módulo de ansiedade vale ouro. Melhor compra que fiz esse ano.”',
     imageUrl: 'https://i.ibb.co/TDxDDbyP/qm2eo6qvlot51-1.webp',
     imageHint: 'man happy',
@@ -59,7 +57,6 @@ export function TestimonialsSection() {
                 <div className="flex-1">
                   <div className="rounded-xl bg-secondary/50 p-3">
                     <p className="font-bold text-primary">{testimonial.name}</p>
-                    <p className="text-sm text-foreground/60 -mt-1">{testimonial.location}</p>
                     <p className="mt-2 text-foreground/90">{testimonial.text}</p>
                   </div>
                   <div className="flex items-center gap-4 px-3 pt-1 text-sm font-medium text-foreground/60">
