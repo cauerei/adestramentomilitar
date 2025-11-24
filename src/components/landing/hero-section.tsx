@@ -25,9 +25,6 @@ export function HeroSection() {
                 <Button asChild size="lg" className="h-14 bg-accent text-xl font-bold text-accent-foreground shadow-lg transition-transform hover:scale-105 hover:bg-accent/90">
                   <a href="#cta">QUERO O MINI CURSO — R$19,90</a>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="h-12 border-primary/50 text-primary hover:bg-primary/10 hover:text-primary">
-                   <a href="#">Assistir aula gratuita</a>
-                </Button>
               </div>
             </div>
           </div>
