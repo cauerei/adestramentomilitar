@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -18,27 +19,21 @@ export function BonusesSection() {
         </div>
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           
-          <Card className="overflow-hidden bg-background">
+          <Card className="flex flex-col bg-background text-center">
             <CardHeader>
               <CardTitle>Bônus #1: Receitas Caseiras Naturais</CardTitle>
-              <CardDescription>Alimentação saudável e saborosa para seu cão.</CardDescription>
             </CardHeader>
-            <CardContent>
-              {bonusRecipe && (
-                  <Image src={bonusRecipe.imageUrl} alt={bonusRecipe.description} width={400} height={300} className="w-full rounded-md object-cover" data-ai-hint={bonusRecipe.imageHint} />
-              )}
+            <CardContent className="flex-grow">
+              <p>Alimentação saudável e saborosa para seu cão.</p>
             </CardContent>
           </Card>
           
-          <Card className="overflow-hidden bg-background">
+          <Card className="flex flex-col bg-background text-center">
             <CardHeader>
               <CardTitle>Bônus #2: Guia de Ansiedade Canina</CardTitle>
-              <CardDescription>Técnicas para acalmar seu cão e evitar o estresse.</CardDescription>
             </CardHeader>
-            <CardContent>
-              {bonusAnxiety && (
-                  <Image src={bonusAnxiety.imageUrl} alt={bonusAnxiety.description} width={400} height={300} className="w-full rounded-md object-cover" data-ai-hint={bonusAnxiety.imageHint} />
-              )}
+            <CardContent className="flex-grow">
+              <p>Técnicas para acalmar seu cão e evitar o estresse.</p>
             </CardContent>
           </Card>
           
