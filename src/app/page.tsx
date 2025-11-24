@@ -11,6 +11,7 @@ import { GuaranteeSection } from '@/components/landing/guarantee-section';
 import { FaqSection } from '@/components/landing/faq-section';
 import { Footer } from '@/components/landing/footer';
 import { Header } from '@/components/landing/header';
+import { FinalCtaSection } from '@/components/landing/final-cta-section';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <MissionsSection />
         <ExpectationsSection />
         <BonusesSection />
+        <FinalCtaSection />
         <GuaranteeSection />
         <FaqSection />
       </main>
