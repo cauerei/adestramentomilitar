@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "productMockup",
+      "description": "Mockup of the Military Dog Training course materials.",
+      "imageUrl": "https://images.unsplash.com/photo-1641154748135-8032a61a3f80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzYzOTgwMTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "book cover"
+    },
+    {
+      "id": "videoThumbnail",
+      "description": "Thumbnail for a video testimonial.",
+      "imageUrl": "https://images.unsplash.com/photo-1587559070757-f72a388edbba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkb2clMjBwbGF5aW5nfGVufDB8fHx8MTc2Mzk2NTEzOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dog playing"
+    },
+    {
+      "id": "testimonial1",
+      "description": "Photo of a happy customer with their dog.",
+      "imageUrl": "https://images.unsplash.com/photo-1584268303498-7c1fc38bc720?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBkb2d8ZW58MHx8fHwxNzYzOTMwNjQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person dog"
+    },
+    {
+      "id": "testimonial2",
+      "description": "Photo of a happy customer with their dog.",
+      "imageUrl": "https://images.unsplash.com/photo-1596645537590-06af92d8d487?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d29tYW4lMjBkb2d8ZW58MHx8fHwxNzYzOTQ3NzMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman dog"
+    },
+    {
+      "id": "testimonial3",
+      "description": "Photo of a happy customer with their dog.",
+      "imageUrl": "https://images.unsplash.com/photo-1521247560470-d2cbfe2f7b47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBkb2d8ZW58MHx8fHwxNzYzOTA1NTk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man dog"
+    },
+    {
+      "id": "bonusRecipe",
+      "description": "Image for the bonus recipe book.",
+      "imageUrl": "https://images.unsplash.com/photo-1565674244283-993fb27a215f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkb2clMjBmb29kfGVufDB8fHx8MTc2Mzk5MTcyMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dog food"
+    },
+    {
+      "id": "bonusAnxiety",
+      "description": "Image for the bonus anxiety guide.",
+      "imageUrl": "https://images.unsplash.com/photo-1711705316838-959467ff4072?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYWxtJTIwZG9nfGVufDB8fHx8MTc2Mzk4MTkxNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "calm dog"
+    },
+    {
+      "id": "securePayments",
+      "description": "Secure payment icons",
+      "imageUrl": "https://images.unsplash.com/photo-1614267119077-51bdcbf9f77a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjcmVkaXQlMjBjYXJkc3xlbnwwfHx8fDE3NjM5MDY4NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "credit cards"
+    }
+  ]
 }
