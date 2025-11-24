@@ -9,6 +9,7 @@ export function HeroSection() {
         backgroundImage: "url('https://i.ibb.co/XxLQH9S/Design-sem-nome-38.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
       }}
     >
       <div className="absolute inset-0 bg-black/50 z-0"></div>
