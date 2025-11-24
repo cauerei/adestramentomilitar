@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '../ui/button';
-import { Heart, ThumbsUp, MessageSquare } from 'lucide-react';
+import { ThumbsUp } from 'lucide-react';
 
 const testimonials = [
   {
     name: 'Lucas Mendonça',
-    text: '“Eu já tinha tentado vários métodos e nada funcionava. No 3º dia aplicando o Método Militar meu cachorro parou de me arrastar no passeio. Surreal o resultado! Recomendo demais!”',
+    text: 'Eu já tinha tentado vários métodos e nada funcionava. No 3º dia aplicando o Método Militar meu cachorro parou de me arrastar no passeio. Surreal o resultado! Recomendo demais!',
     imageUrl: 'https://i.ibb.co/Cp9Mcypw/images-7.webp',
     imageHint: 'man portrait',
     reactions: [
@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     name: 'Rafael Antunes',
-    text: '“Meu cachorro era super ansioso e não obedecia nada. Em menos de 7 dias ele virou outro! O módulo de ansiedade vale ouro. Melhor compra que fiz esse ano.”',
+    text: 'Meu cachorro era super ansioso e não obedecia nada. Em menos de 7 dias ele virou outro! O módulo de ansiedade vale ouro. Melhor compra que fiz esse ano.',
     imageUrl: 'https://i.ibb.co/TDxDDbyP/qm2eo6qvlot51-1.webp',
     imageHint: 'man happy',
     reactions: [
