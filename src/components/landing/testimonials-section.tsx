@@ -1,37 +1,34 @@
 import Image from 'next/image';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Card, CardContent } from '@/components/ui/card';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Star } from 'lucide-react';
 import { Button } from '../ui/button';
+import { Heart, ThumbsUp, MessageSquare } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Juliana S.',
+    name: 'Lucas Mendonça',
     location: 'São Paulo, SP',
-    text: '“Incrível! No 2º dia meu cachorro já parou de puxar a guia. Parece mágica! O método é muito fácil de seguir.”',
-    imageId: 'testimonial1',
-    imageHint: 'person dog',
+    text: '“Eu já tinha tentado vários métodos e nada funcionava. No 3º dia aplicando o Método Militar meu cachorro parou de me arrastar no passeio. Surreal o resultado! Recomendo demais!”',
+    imageUrl: 'https://i.ibb.co/Cp9Mcypw/images-7.webp',
+    imageHint: 'man portrait',
+    reactions: [
+      <ThumbsUp key="thumb" className="h-5 w-5 fill-blue-600 text-blue-600" />,
+      <Heart key="heart" className="h-5 w-5 fill-red-600 text-red-600" />
+    ]
   },
   {
-    name: 'Ricardo F.',
-    location: 'Rio de Janeiro, RJ',
-    text: '“Eu estava quase desistindo. Em 5 dias, os latidos excessivos diminuíram 90%. Recomendo para todos!”',
-    imageId: 'testimonial2',
-    imageHint: 'woman dog',
-  },
-  {
-    name: 'Mariana C.',
+    name: 'Rafael Antunes',
     location: 'Belo Horizonte, MG',
-    text: '“O melhor investimento que fiz. Em 7 dias completei as missões e hoje tenho um cão calmo e obediente. Obrigada!”',
-    imageId: 'testimonial3',
-    imageHint: 'man dog',
+    text: '“Meu cachorro era super ansioso e não obedecia nada. Em menos de 7 dias ele virou outro! O módulo de ansiedade vale ouro. Melhor compra que fiz esse ano.”',
+    imageUrl: 'https://i.ibb.co/TDxDDbyP/qm2eo6qvlot51-1.webp',
+    imageHint: 'man happy',
+    reactions: [
+      <ThumbsUp key="thumb" className="h-5 w-5 fill-blue-600 text-blue-600" />,
+      <svg key="fire" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#f97316" stroke="#f97316" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+    ]
   },
 ];
 
 export function TestimonialsSection() {
-    const videoThumbnail = PlaceHolderImages.find(p => p.id === 'videoThumbnail');
-
   return (
     <section id="testimonials" className="bg-card py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4">
@@ -41,43 +38,41 @@ export function TestimonialsSection() {
             Veja o que os tutores que aplicaram o Método Militar estão dizendo.
           </p>
         </div>
-        <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
-             <div className="relative overflow-hidden rounded-lg shadow-xl aspect-video">
-                <iframe 
-                    className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/Qy9mdsz4L7A?autoplay=0&rel=0" 
-                    title="YouTube video player" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowFullScreen>
-                </iframe>
+        <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 md:items-center">
+             <div className="mx-auto w-full max-w-[320px] overflow-hidden rounded-lg shadow-xl">
+                <div className="relative w-full" style={{paddingTop: '177.78%' /* 9:16 Aspect Ratio */}}>
+                    <iframe 
+                        className="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/Qy9mdsz4L7A?autoplay=0&rel=0" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowFullScreen>
+                    </iframe>
+                </div>
             </div>
           <div className="grid grid-cols-1 gap-6">
-            {testimonials.map((testimonial, index) => {
-              const image = PlaceHolderImages.find(p => p.id === testimonial.imageId);
-              return (
-                <Card key={index} className="bg-background">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      {image && (
-                        <Avatar>
-                          <AvatarImage src={image.imageUrl} alt={testimonial.name} data-ai-hint={testimonial.imageHint} />
-                          <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                        </Avatar>
-                      )}
-                      <div>
-                        <p className="font-bold">{testimonial.name}</p>
-                        <p className="text-sm text-foreground/60">{testimonial.location}</p>
-                      </div>
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="flex gap-3 rounded-lg bg-background p-4 shadow-sm">
+                <Avatar>
+                  <AvatarImage src={testimonial.imageUrl} alt={testimonial.name} data-ai-hint={testimonial.imageHint} />
+                  <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                </Avatar>
+                <div className="flex-1">
+                  <div className="rounded-xl bg-secondary/50 p-3">
+                    <p className="font-bold text-primary">{testimonial.name}</p>
+                    <p className="text-sm text-foreground/60 -mt-1">{testimonial.location}</p>
+                    <p className="mt-2 text-foreground/90">{testimonial.text}</p>
+                  </div>
+                  <div className="flex items-center gap-4 px-3 pt-1 text-sm font-medium text-foreground/60">
+                    <div className="flex items-center gap-1">
+                      {testimonial.reactions}
                     </div>
-                    <p className="mt-4 text-foreground/90">{testimonial.text}</p>
-                    <div className="mt-2 flex gap-0.5">
-                        {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-accent text-accent" />)}
-                    </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
+                    <span>Responder</span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
         <div className="mt-10 flex flex-col items-center">

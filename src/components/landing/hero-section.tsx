@@ -24,7 +24,7 @@ export function HeroSection() {
                 </p>
               </div>
               <div className="mt-4 flex w-full max-w-sm flex-col items-center gap-3">
-                <Button asChild size="lg" className="h-14 w-full bg-accent text-xl font-bold text-accent-foreground shadow-lg transition-transform hover:scale-105 hover:bg-accent/90">
+                <Button asChild size="lg" className="h-auto min-h-14 whitespace-normal px-6 py-3 text-lg font-bold leading-tight text-accent-foreground shadow-lg transition-transform hover:scale-105 hover:bg-accent/90 sm:text-xl">
                   <a href="#cta">QUERO UM CÃO OBEDIENTE EM 7 DIAS!</a>
                 </Button>
                 <Image 
