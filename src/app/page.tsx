@@ -9,7 +9,6 @@ import { ExpectationsSection } from '@/components/landing/expectations-section';
 import { BonusesSection } from '@/components/landing/bonuses-section';
 import { GuaranteeSection } from '@/components/landing/guarantee-section';
 import { FaqSection } from '@/components/landing/faq-section';
-import { FinalCtaSection } from '@/components/landing/final-cta-section';
 import { Footer } from '@/components/landing/footer';
 import { Header } from '@/components/landing/header';
 
@@ -29,7 +28,6 @@ export default function Home() {
         <BonusesSection />
         <GuaranteeSection />
         <FaqSection />
-        <FinalCtaSection />
       </main>
       <Footer />
     </div>
