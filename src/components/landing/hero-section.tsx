@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 export function HeroSection() {
   return (
@@ -22,10 +23,16 @@ export function HeroSection() {
                   <span className="text-5xl font-bold text-accent">por R$19,90</span>
                 </p>
               </div>
-              <div className="mt-4 flex w-full max-w-sm flex-col gap-3">
-                <Button asChild size="lg" className="h-14 bg-accent text-xl font-bold text-accent-foreground shadow-lg transition-transform hover:scale-105 hover:bg-accent/90">
-                  <a href="#cta">QUERO O MINI CURSO — R$19,90</a>
+              <div className="mt-4 flex w-full max-w-sm flex-col items-center gap-3">
+                <Button asChild size="lg" className="h-14 w-full bg-accent text-xl font-bold text-accent-foreground shadow-lg transition-transform hover:scale-105 hover:bg-accent/90">
+                  <a href="#cta">QUERO UM CÃO OBEDIENTE EM 7 DIAS!</a>
                 </Button>
+                <Image 
+                    src="https://i.ibb.co/G6DpPsD/DM-20250624235520-015.webp"
+                    alt="Pagamento seguro"
+                    width={250}
+                    height={35}
+                />
               </div>
             </div>
           </div>

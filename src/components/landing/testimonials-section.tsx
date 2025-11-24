@@ -2,7 +2,8 @@ import Image from 'next/image';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { PlayCircle, Star } from 'lucide-react';
+import { Star } from 'lucide-react';
+import { Button } from '../ui/button';
 
 const testimonials = [
   {
@@ -41,21 +42,16 @@ export function TestimonialsSection() {
           </p>
         </div>
         <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
-            {videoThumbnail && (
-                 <div className="group relative cursor-pointer overflow-hidden rounded-lg shadow-xl">
-                    <Image
-                        src={videoThumbnail.imageUrl}
-                        alt={videoThumbnail.description}
-                        width={1280}
-                        height={720}
-                        className="aspect-video w-full object-cover transition-transform group-hover:scale-105"
-                        data-ai-hint={videoThumbnail.imageHint}
-                    />
-                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                        <PlayCircle className="h-20 w-20 text-white/80 transition-all group-hover:text-white group-hover:scale-110" />
-                    </div>
-                </div>
-            )}
+             <div className="relative overflow-hidden rounded-lg shadow-xl aspect-video">
+                <iframe 
+                    className="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/Qy9mdsz4L7A?autoplay=0&rel=0" 
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowFullScreen>
+                </iframe>
+            </div>
           <div className="grid grid-cols-1 gap-6">
             {testimonials.map((testimonial, index) => {
               const image = PlaceHolderImages.find(p => p.id === testimonial.imageId);
@@ -83,6 +79,19 @@ export function TestimonialsSection() {
               );
             })}
           </div>
+        </div>
+        <div className="mt-10 flex flex-col items-center">
+            <Button asChild size="lg" className="h-14 bg-accent text-xl font-bold text-accent-foreground shadow-lg transition-transform hover:scale-105 hover:bg-accent/90">
+                <a href="#cta">QUERO TREINAR MEU CACHORRO AGORA!</a>
+            </Button>
+            <div className="mt-3">
+                 <Image 
+                    src="https://i.ibb.co/G6DpPsD/DM-20250624235520-015.webp"
+                    alt="Pagamento seguro"
+                    width={250}
+                    height={35}
+                />
+            </div>
         </div>
       </div>
     </section>

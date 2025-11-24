@@ -15,7 +15,7 @@ import { FinalCtaSection } from '@/components/landing/final-cta-section';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-background">
       <ScarcityBar />
       <Header />
       <main className="flex-1">

@@ -1,7 +1,7 @@
 import { CheckCircle2, Book, ListChecks, HeartHandshake, Bot, Users, Star, ShieldCheck } from 'lucide-react';
 
 const benefits = [
-    { icon: Bot, text: "MINI CURSO em vídeo (WebApp)" },
+    { icon: Bot, text: "MINI CURSO" },
     { icon: Book, text: "Livro digital em PDF" },
     { icon: ListChecks, text: "Checklists de treino" },
     { icon: Star, text: "Bônus: Receitas Naturais para Cães" },
