@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Gift, Users } from 'lucide-react';
+import { Gift, Users, Star } from 'lucide-react';
 
 export function BonusesSection() {
   return (
@@ -19,8 +19,9 @@ export function BonusesSection() {
               <Gift className="mb-4 h-12 w-12 text-accent" />
               <CardTitle>Bônus #1: Receitas Caseiras Naturais</CardTitle>
             </CardHeader>
-            <CardContent className="flex-grow px-6 pb-6">
+            <CardContent className="flex flex-grow flex-col justify-between px-6 pb-6">
               <p>Alimentação saudável e saborosa para seu cão.</p>
+              <p className="mt-4 font-bold text-accent">Valor real: R$ 67,00</p>
             </CardContent>
           </Card>
           
@@ -29,23 +30,28 @@ export function BonusesSection() {
               <Gift className="mb-4 h-12 w-12 text-accent" />
               <CardTitle>Bônus #2: Guia de Ansiedade Canina</CardTitle>
             </CardHeader>
-            <CardContent className="flex-grow px-6 pb-6">
+            <CardContent className="flex flex-grow flex-col justify-between px-6 pb-6">
               <p>Técnicas para acalmar seu cão e evitar o estresse.</p>
+              <p className="mt-4 font-bold text-accent">Valor real: R$ 67,00</p>
             </CardContent>
           </Card>
           
-          <Card className="flex flex-col items-center justify-center bg-primary text-center text-primary-foreground lg:col-span-1 md:col-span-2">
+          <Card className="flex flex-col items-center bg-background text-center">
             <CardHeader className="items-center">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary-foreground/20">
-                <Users className="h-8 w-8 text-primary-foreground" />
-              </div>
-              <CardTitle className="text-2xl">Acesso ao Grupo <span className="text-accent">EXCLUSIVO</span></CardTitle>
+              <Gift className="mb-4 h-12 w-12 text-accent" />
+              <CardTitle>Bônus Extra: Acesso ao Grupo Exclusivo</CardTitle>
             </CardHeader>
-            <CardContent>
-              <p>Troque experiências, tire dúvidas e compartilhe suas vitórias com outros tutores e com nossa equipe de suporte.</p>
+            <CardContent className="flex flex-grow flex-col justify-between px-6 pb-6">
+               <p>Troque experiências, tire dúvidas e compartilhe suas vitórias com outros tutores.</p>
+               <p className="mt-4 font-bold text-accent">Valor real: R$ 49,00</p>
             </CardContent>
           </Card>
+        </div>
 
+        <div className="mt-12 text-center">
+            <p className="text-2xl font-bold text-accent sm:text-3xl">⭐ Hoje você leva TUDO isso totalmente de graça!</p>
+            <p className="mt-2 text-foreground/70">(Oferta exclusiva de Black Friday)</p>
+            <p className="mt-1 text-sm text-foreground/60">Incluído gratuitamente com sua compra do MINI CURSO Método Militar™</p>
         </div>
       </div>
     </section>
