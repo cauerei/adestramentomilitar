@@ -43,7 +43,7 @@ export function FinalCtaSection() {
                   className="rounded-md shadow-md"
                />
                <p className="mt-6 text-xl font-semibold text-primary">TOTAL:</p>
-                <p className="my-1 text-6xl font-bold text-yellow-500 sm:text-7xl">
+                <p className="my-1 text-6xl font-bold text-accent sm:text-7xl">
                   R$19,90
                 </p>
                 <p className="text-sm font-medium text-foreground/70">

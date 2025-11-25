@@ -22,7 +22,7 @@
     --muted: 88 25% 88%;
     --muted-foreground: 0 0% 45.1%;
 
-    --accent: 33 100% 50%; /* Orange */
+    --accent: 124 50% 23%; /* Forest Green */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -30,7 +30,7 @@
 
     --border: 88 25% 78%;
     --input: 88 25% 78%;
-    --ring: 33 100% 50%; /* Orange for focus rings */
+    --ring: 124 50% 23%; /* Forest Green for focus rings */
 
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
@@ -59,7 +59,7 @@
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 0 0% 63.9%;
 
-    --accent: 33 100% 50%; /* Orange */
+    --accent: 124 50% 33%; /* Lighter Forest Green */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
@@ -67,7 +67,7 @@
 
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 33 100% 50%;
+    --ring: 124 50% 33%;
 
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
