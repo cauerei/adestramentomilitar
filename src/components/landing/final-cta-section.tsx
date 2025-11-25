@@ -52,7 +52,7 @@ export function FinalCtaSection() {
               
               <div className="mt-8 flex w-full flex-col items-center">
                  <Button asChild size="lg" className="h-16 w-full max-w-md animate-pulse-slow bg-accent text-lg font-bold text-accent-foreground shadow-lg transition-transform hover:scale-105 hover:bg-accent/90">
-                  <a href="#cta-link">👉 QUERO O MÉTODO MILITAR AGORA!</a>
+                  <a href="https://www.ggcheckout.com/checkout/v2/OOOpjbjrg58qkA1qtJUZ" target="_blank" rel="noopener noreferrer">👉 QUERO O MÉTODO MILITAR AGORA!</a>
                 </Button>
                 <div className="mt-3 flex justify-center">
                   <Image 
