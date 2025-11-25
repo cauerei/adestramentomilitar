@@ -34,7 +34,7 @@ export function TestimonialsSection() {
             Veja o que os tutores que aplicaram o Método Militar estão dizendo.
           </p>
         </div>
-        <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 md:items-center">
+        <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 md:items-start">
              <div className="mx-auto w-full max-w-[320px] overflow-hidden rounded-lg shadow-xl">
                 <div className="relative w-full" style={{paddingTop: '177.78%' /* 9:16 Aspect Ratio */}}>
                     <iframe 

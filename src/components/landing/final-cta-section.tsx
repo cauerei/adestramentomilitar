@@ -14,7 +14,7 @@ export function FinalCtaSection() {
   return (
     <section id="cta" className="py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-4xl rounded-lg border-2 border-dashed border-white bg-card p-8 shadow-2xl sm:p-10">
+        <div className="mx-auto max-w-4xl rounded-lg border-2 border-dashed border-white bg-card p-6 shadow-2xl sm:p-8">
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             
             <div className="flex flex-col gap-6 text-left">
@@ -23,7 +23,7 @@ export function FinalCtaSection() {
               </h2>
               <div className="space-y-4 text-foreground">
                 {includedItems.map((item, index) => (
-                  <div key={index} className="flex justify-between border-b border-border pb-2">
+                  <div key={index} className="flex justify-between border-b border-border pb-2 text-sm sm:text-base">
                     <span className="text-left">{item.name}</span>
                     <span className="font-semibold text-right">{item.value}</span>
                   </div>
@@ -40,18 +40,18 @@ export function FinalCtaSection() {
                   alt="Mockup do curso Método Militar" 
                   width={300} 
                   height={300} 
-                  className="rounded-md shadow-md"
+                  className="rounded-md shadow-md w-full max-w-[300px] h-auto"
                />
                <p className="mt-6 text-xl font-semibold text-primary">TOTAL:</p>
-                <p className="my-1 text-6xl font-bold text-accent sm:text-7xl">
+                <p className="my-1 text-5xl font-bold text-accent sm:text-6xl">
                   R$19,90
                 </p>
-                <p className="text-sm font-medium text-foreground/70">
+                <p className="text-sm font-medium text-foreground/70 text-center">
                   Apenas hoje — oferta de Black Friday
                 </p>
               
               <div className="mt-8 flex w-full flex-col items-center">
-                 <Button asChild size="lg" className="h-16 w-full max-w-md animate-pulse-slow bg-accent text-lg font-bold text-accent-foreground shadow-lg transition-transform hover:scale-105 hover:bg-accent/90">
+                 <Button asChild size="lg" className="h-auto min-h-16 w-full max-w-md animate-pulse-slow bg-accent py-3 px-4 text-lg font-bold text-accent-foreground shadow-lg transition-transform hover:scale-105 hover:bg-accent/90 whitespace-normal leading-tight">
                   <a href="https://www.ggcheckout.com/checkout/v2/OOOpjbjrg58qkA1qtJUZ" target="_blank" rel="noopener noreferrer">👉 QUERO O MÉTODO MILITAR AGORA!</a>
                 </Button>
                 <div className="mt-3 flex justify-center">
