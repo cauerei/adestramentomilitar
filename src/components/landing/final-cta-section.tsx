@@ -77,8 +77,13 @@ export function FinalCtaSection() {
           </div>
 
           {/* Complete Plan Card */}
-          <div className="mx-auto flex w-full max-w-2xl flex-col rounded-lg border-2 border-dashed border-primary bg-[#D8F9C1] p-6 shadow-2xl sm:p-8">
-             <h2 className="mb-6 text-center text-2xl font-bold text-primary sm:text-3xl">
+          <div className="relative mx-auto flex w-full max-w-2xl flex-col rounded-lg border-2 border-primary border-dashed bg-[#D8F9C1] p-6 shadow-2xl sm:p-8">
+             <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                <div className="rounded-md bg-[#F4A300] px-3 py-1">
+                    <span className="text-sm font-bold uppercase text-white">Mais Vendido</span>
+                </div>
+            </div>
+             <h2 className="mb-6 text-center text-2xl font-bold text-primary sm:text-3xl mt-4">
                 PLANO COMPLETO – MÉTODO MILITAR™
             </h2>
             <div className="grid flex-grow gap-8 md:grid-cols-2 md:items-center">
