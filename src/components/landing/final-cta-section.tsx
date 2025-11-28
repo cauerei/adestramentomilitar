@@ -4,7 +4,6 @@ import Image from 'next/image';
 
 const basicPlanItems = [
   { name: 'MINI CURSO Método Militar™ (vídeo + PDF)', value: 'R$ 97,00' },
-  { name: 'Acesso ao Grupo Exclusivo de Tutores', value: 'R$ 49,00' },
   { name: 'Acesso vitalício ao conteúdo', value: 'R$ 49,00' },
 ];
 
@@ -22,25 +21,25 @@ export function FinalCtaSection() {
   return (
     <section id="cta" className="py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 items-stretch justify-center gap-8 lg:grid-cols-2">
             
           {/* Basic Plan Card */}
-          <div className="mx-auto w-full max-w-2xl rounded-lg border-2 border-dashed border-white bg-card p-6 shadow-2xl sm:p-8 flex flex-col">
-            <h2 className="text-2xl font-bold text-primary sm:text-3xl text-center mb-6">
+          <div className="mx-auto flex w-full max-w-2xl flex-col rounded-lg border-2 border-dashed border-primary bg-card p-6 shadow-2xl sm:p-8">
+            <h2 className="mb-6 text-center text-2xl font-bold text-primary sm:text-3xl">
                 PLANO BÁSICO – MINI CURSO MÉTODO MILITAR™
             </h2>
-            <div className="grid gap-8 md:grid-cols-2 md:items-center flex-grow">
+            <div className="grid flex-grow gap-8 md:grid-cols-2 md:items-center">
               <div className="flex flex-col gap-6 text-left">
                 <div className="space-y-4 text-foreground">
                   {basicPlanItems.map((item, index) => (
-                    <div key={index} className="flex justify-between border-b border-border pb-2 text-sm sm:text-base">
-                      <span className="text-left">{item.name}</span>
-                      <span className="font-semibold text-right">{item.value}</span>
+                    <div key={index} className="flex items-center justify-between border-b border-border pb-2 text-sm sm:text-base">
+                      <span className="flex items-center gap-2 text-left"><Check className="h-4 w-4 text-green-700" /> {item.name}</span>
+                      <span className="text-right font-semibold">{item.value}</span>
                     </div>
                   ))}
                 </div>
                 <div className="text-right">
-                  <p className="text-xl font-bold text-red-600 line-through decoration-2">De R$ 195,00</p>
+                  <p className="text-xl font-bold text-red-600 line-through decoration-2">De R$146,00</p>
                 </div>
               </div>
 
@@ -50,13 +49,13 @@ export function FinalCtaSection() {
                     alt="Mockup do curso Método Militar" 
                     width={300} 
                     height={300} 
-                    className="rounded-md shadow-md w-full max-w-[300px] h-auto"
+                    className="h-auto w-full max-w-[300px] rounded-md shadow-md"
                  />
                  <p className="mt-6 text-xl font-semibold text-primary">TOTAL:</p>
                   <p className="my-1 text-5xl font-bold text-accent sm:text-6xl">
                     R$19,90
                   </p>
-                  <p className="text-sm font-medium text-foreground/70 text-center">
+                  <p className="text-center text-sm font-medium text-foreground/70">
                     Apenas hoje — oferta de Black Friday
                   </p>
                 
@@ -78,25 +77,25 @@ export function FinalCtaSection() {
           </div>
 
           {/* Complete Plan Card */}
-          <div className="mx-auto w-full max-w-2xl rounded-lg border-2 border-dashed border-white bg-[#D8F9C1] p-6 shadow-2xl sm:p-8 flex flex-col">
-             <h2 className="text-2xl font-bold text-primary sm:text-3xl text-center mb-6">
+          <div className="mx-auto flex w-full max-w-2xl flex-col rounded-lg border-2 border-dashed border-primary bg-[#D8F9C1] p-6 shadow-2xl sm:p-8">
+             <h2 className="mb-6 text-center text-2xl font-bold text-primary sm:text-3xl">
                 PLANO COMPLETO – MÉTODO MILITAR™
             </h2>
-            <div className="grid gap-8 md:grid-cols-2 md:items-center flex-grow">
+            <div className="grid flex-grow gap-8 md:grid-cols-2 md:items-center">
               <div className="flex flex-col gap-6 text-left">
                 <div className="space-y-2 text-foreground">
                   {completePlanItems.map((item, index) => (
-                    <div key={index} className="flex justify-between border-b border-border pb-2 text-sm">
-                      <span className="text-left flex items-center gap-2">
-                        <Check className="w-4 h-4 text-green-700" />
+                    <div key={index} className="flex justify-between border-b border-border/50 pb-2 text-sm">
+                      <span className="flex items-center gap-2 text-left">
+                        <Check className="h-4 w-4 text-green-700" />
                         {item.name}
                       </span>
-                      <span className="font-semibold text-right flex-shrink-0 ml-2">{item.value}</span>
+                      <span className="ml-2 flex-shrink-0 text-right font-semibold">{item.value}</span>
                     </div>
                   ))}
                 </div>
                 <div className="text-right">
-                  <p className="text-xl font-bold text-red-600 line-through decoration-2">De R$ 426,00</p>
+                  <p className="text-xl font-bold text-red-600 line-through decoration-2">De R$426,00</p>
                 </div>
               </div>
 
@@ -106,13 +105,13 @@ export function FinalCtaSection() {
                     alt="Mockup do curso Método Militar" 
                     width={300} 
                     height={300} 
-                    className="rounded-md shadow-md w-full max-w-[300px] h-auto"
+                    className="h-auto w-full max-w-[300px] rounded-md shadow-md"
                  />
                  <p className="mt-6 text-xl font-semibold text-primary">TOTAL:</p>
                   <p className="my-1 text-5xl font-bold text-accent sm:text-6xl">
                     R$29,90
                   </p>
-                  <p className="text-sm font-medium text-foreground/70 text-center">
+                  <p className="text-center text-sm font-medium text-foreground/70">
                     Apenas hoje — oferta de Black Friday
                   </p>
                 
