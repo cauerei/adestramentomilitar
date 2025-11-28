@@ -4,8 +4,6 @@ import Image from 'next/image';
 
 const includedItems = [
   { name: 'MINI CURSO Método Militar™ (vídeo + PDF)', value: 'R$ 97,00' },
-  { name: 'Bônus #1: Receitas Caseiras Naturais', value: 'R$ 67,00' },
-  { name: 'Bônus #2: Guia de Ansiedade Canina', value: 'R$ 67,00' },
   { name: 'Acesso ao Grupo Exclusivo de Tutores', value: 'R$ 49,00' },
   { name: 'Acesso vitalício ao conteúdo', value: 'R$ 49,00' },
 ];
@@ -19,7 +17,7 @@ export function FinalCtaSection() {
             
             <div className="flex flex-col gap-6 text-left">
               <h2 className="text-3xl font-bold text-primary sm:text-4xl">
-                O que você vai receber:
+                PLANO BÁSICO – MINI CURSO MÉTODO MILITAR™
               </h2>
               <div className="space-y-4 text-foreground">
                 {includedItems.map((item, index) => (
@@ -30,7 +28,7 @@ export function FinalCtaSection() {
                 ))}
               </div>
               <div className="text-right">
-                <p className="text-xl font-bold text-red-600 line-through decoration-2">De R$ 329,00</p>
+                <p className="text-xl font-bold text-red-600 line-through decoration-2">De R$ 195,00</p>
               </div>
             </div>
 
