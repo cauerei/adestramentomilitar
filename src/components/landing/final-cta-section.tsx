@@ -80,7 +80,7 @@ export function FinalCtaSection() {
           <div className="relative mx-auto flex w-full max-w-2xl flex-col rounded-lg border-2 border-primary border-dashed bg-[#D8F9C1] p-6 shadow-2xl sm:p-8">
              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                 <div className="rounded-md bg-[#F4A300] px-3 py-1">
-                    <span className="text-sm font-bold uppercase text-white">Mais Vendido</span>
+                    <span className="text-sm font-bold uppercase text-white">MAIS VENDIDO</span>
                 </div>
             </div>
              <h2 className="mb-6 text-center text-2xl font-bold text-primary sm:text-3xl mt-4">
@@ -122,7 +122,7 @@ export function FinalCtaSection() {
                 
                 <div className="mt-8 flex w-full flex-col items-center">
                    <Button asChild size="lg" className="h-auto min-h-16 w-full max-w-md animate-pulse-slow bg-accent py-3 px-4 text-lg font-bold text-accent-foreground shadow-lg transition-transform hover:scale-105 hover:bg-accent/90 whitespace-normal leading-tight">
-                    <a href="https://www.ggcheckout.com/checkout/v2/OOOpjbjrg58qkA1qtJUZ" target="_blank" rel="noopener noreferrer">👉 QUERO O MÉTODO COMPLETO!</a>
+                    <a href="https://www.ggcheckout.com/checkout/v2/b1A1j00NzgoaUaIhZY4P" >👉 QUERO O MÉTODO COMPLETO!</a>
                   </Button>
                   <div className="mt-3 flex justify-center">
                     <Image 
