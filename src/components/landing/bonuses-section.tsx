@@ -50,7 +50,7 @@ export function BonusesSection() {
 
         <div className="mt-12 text-center">
             <p className="text-2xl font-bold text-accent sm:text-3xl">⭐ Hoje você leva TUDO isso totalmente de graça!</p>
-            <p className="mt-2 text-foreground/70">(Oferta exclusiva de Black Friday)</p>
+            <p className="mt-2 text-foreground/70">(Oferta Especial de Hoje)</p>
             <p className="mt-1 text-sm text-foreground/60">Incluído gratuitamente com sua compra do MINI CURSO Método Militar™</p>
         </div>
       </div>

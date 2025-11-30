@@ -56,7 +56,7 @@ export function FinalCtaSection() {
                     R$19,90
                   </p>
                   <p className="text-center text-sm font-medium text-foreground/70">
-                    Apenas hoje — oferta de Black Friday
+                    Apenas Hoje — Oferta Especial
                   </p>
                 
                 <div className="mt-8 flex w-full flex-col items-center">
@@ -117,7 +117,7 @@ export function FinalCtaSection() {
                     R$29,90
                   </p>
                   <p className="text-center text-sm font-medium text-foreground/70">
-                    Apenas hoje — oferta de Black Friday
+                    Apenas Hoje — Oferta Especial
                   </p>
                 
                 <div className="mt-8 flex w-full flex-col items-center">
